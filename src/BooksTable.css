@@ -1,0 +1,36 @@
+.books-table {
+    display: table;
+    margin: 10px 10px 5% 5%;
+    overflow: hidden;
+    table-layout: fixed;
+    width: 90%;
+}
+
+.books-table-row {
+    display: table-row;
+}
+
+.books-table-row:nth-child(odd) {
+    background-color: #edaa7e;
+}
+
+.books-table-row:nth-child(even) {
+    background-color: #f5ea98;
+}
+
+.books-table-header, .books-table-col {
+    display: table-cell;
+    border-bottom: 10px solid;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.books-table-header {
+    border-bottom: 10px solid;
+    background-color: white;
+}
+
+.books-table-row :hover:not(.books-table-header) {
+    cursor: pointer;
+}
